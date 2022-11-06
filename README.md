@@ -1,9 +1,9 @@
 # Reminder-Clone
 Clone of the native "Reminders" App on iOS implemented using primitive SwiftUI types
 
-1. create an iOS project
+1. Create an iOS project
 2. Select SwiftUI as the language and Swift as the library.
-3. Either replace the ContentView contents with the contents of this git or clone this git into your projects directory and then replace "ContentView()" in your app's main entry (@main).
+3. Either replace the ContentView contents with the contents of this git or clone this git into your projects directory and then replace "ContentView()" in your app's main entry (@main) with "LandingPageView()".
 
 EXAMPLE:
 

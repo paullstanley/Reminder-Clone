@@ -1,12 +1,10 @@
-//Clone of the Native iOS app "Reminders" implented using SwiftUI
-//Very basic, no bells and whistles, meant as an introductory to SwiftUI
-
-//
+//  Clone of the Native iOS app "Reminders" implented using SwiftUI
+//  Very basic, no bells and whistles, meant as an introductory to SwiftUI
 //  LandingPageView.swift
-//  Betho
 //
-//  Created by Paull Stanley on 11/5/22.
+//  Reminder-Clone
 //
+//  Created by Paull Stanley on 11/5/22
 
 import SwiftUI
 

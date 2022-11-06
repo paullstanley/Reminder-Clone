@@ -1,0 +1,209 @@
+//Clone of the Native iOS app "Reminders" implented using SwiftUI
+//Very basic, no bells and whistles, meant as an introductory to SwiftUI
+
+//
+//  LandingPageView.swift
+//  Betho
+//
+//  Created by Paull Stanley on 11/5/22.
+//
+
+import SwiftUI
+
+struct LandingPageView: View {
+    @State var searchText: String = "Search"
+    var body: some View {
+        VStack {
+            HStack {
+                List {
+                    Section(header: Text("Today")) {
+                        VStack {
+                            HStack {
+                                Image(systemName: "calendar.circle.fill")
+                                    .foregroundColor(.accentColor)
+                                Spacer()
+                                Text("0")
+                                    .foregroundColor(.red)
+                                    .bold()
+                            }
+                            Spacer()
+                            HStack {
+                                Text("Fill")
+                                Spacer()
+                            }
+                        }
+                    }
+                }
+                List {
+                    Section(header: Text("Scheduled")) {
+                        VStack {
+                            HStack {
+                                Image(systemName: "calendar.circle.fill")
+                                    .foregroundColor(.red)
+                                Spacer()
+                                Text("3")
+                                    .foregroundColor(.accentColor)
+                                    .bold()
+                            }
+                            Spacer()
+                            HStack {
+                                Text("fill4")
+                                Spacer()
+                            }
+                        }
+                        
+                    }
+                }
+                
+            }
+            HStack {
+                List {
+                    Section(header: Text("All")) {
+                        VStack {
+                            HStack {
+                                Image(systemName: "tray.circle.fill")
+                                    .foregroundColor(.gray)
+                                    .background(Color.white)
+                                    .clipShape(Circle())
+                                Spacer()
+                                Text("0")
+                                    .bold()
+                            }
+                            Spacer()
+                            HStack {
+                                Text("fill10")
+                                Spacer()
+                            }
+                        }
+                    }
+                }
+                List {
+                    Section(header: Text("Flagged")) {
+                        VStack {
+                            HStack {
+                                Image(systemName: "flag.circle.fill")
+                                    .background(Color.white)
+                                    .foregroundColor(.orange)
+                                    .clipShape(Circle())
+                                Spacer()
+                                Text("1")
+                                    .foregroundColor(.accentColor)
+                                    .bold()
+                            }
+                            Spacer()
+                            HStack {
+                                Text("fill11")
+                                Spacer()
+                            }
+                        }
+                    }
+                }
+            }
+            HStack {
+                List {
+                    Section(header: Text("Completed")) {
+                        VStack {
+                            HStack {
+                                Image(systemName: "checkmark.circle.fill")
+                                    .background(Color.white)
+                                    .foregroundColor(.gray)
+                                    .clipShape(Circle())
+                                Spacer()
+                                Text("0")
+                                    .foregroundColor(.red)
+                                    .bold()
+                            }
+                            Spacer()
+                            HStack {
+                                Text("Fill13")
+                                Spacer()
+                            }
+                        }
+                    }
+                }
+                List {
+                    Section(header: Text("Assigned")) {
+                        VStack {
+                            HStack {
+                                Image(systemName: "person.circle.fill")
+                                    .background(Color.white)
+                                    .foregroundColor(.green)
+                                    .clipShape(Circle())
+                                Spacer()
+                                Text("1")
+                                    .foregroundColor(.accentColor)
+                                    .bold()
+                            }
+                            Spacer()
+                            HStack {
+                                Text("fill16")
+                                Spacer()
+                            }
+                        }
+                    }
+                }
+            }
+            VStack {
+                List {
+                    Section(
+                        header: Text("iCloud")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .bold()
+                    ) {
+                        VStack {
+                            HStack {
+                                Image(systemName: "list.bullet.circle.fill")
+                                    .background(Color.white)
+                                    .foregroundColor(.blue)
+                                    .clipShape(Circle())
+                                Text("Chores")
+                                Spacer()
+                                Text(">")
+                                    .foregroundColor(.gray)
+                            }
+                        }
+                        Text("fill3")
+                    }
+                    
+                }
+                List {
+                    Section(
+                        header: Text("Outlook")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .bold()) {
+                                HStack {
+                                    Image(systemName: "list.bullet.circle.fill")
+                                        .background(Color.white)
+                                        .foregroundColor(.blue)
+                                        .clipShape(Circle())
+                                    Text("fill7")
+                                    Spacer()
+                                    Text(">")
+                                        .foregroundColor(.gray)
+                                }
+                                HStack {
+                                    Image(systemName: "list.bullet.circle.fill")
+                                        .background(Color.white)
+                                        .foregroundColor(.red)
+                                        .clipShape(Circle())
+                                    Text("fil20")
+                                }
+                        
+                        
+                    }
+                    
+                }
+            }
+            
+        }
+        
+    }
+}
+
+struct LandingPageView_Previews: PreviewProvider {
+    static var previews: some View {
+        LandingPageView()
+    }
+}
